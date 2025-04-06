@@ -42,3 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Nivel
+    uniqueID: 805369221
+    locked: 0
+  - name: Fondo
+    uniqueID: 4070911995
+    locked: 0
+  - name: Personaje
+    uniqueID: 2866066381
+    locked: 0
