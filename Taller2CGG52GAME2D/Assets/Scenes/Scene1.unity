@@ -61445,6 +61445,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8183758440019976683, guid: c759bb922e42eda4eb6f7e6e4e2fbe63, type: 3}
   m_PrefabInstance: {fileID: 1421779352}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &347174381
 GameObject:
   m_ObjectHideFlags: 0
@@ -66275,6 +66276,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> AlejandroRivera
 --- !u!1 &349118875
 GameObject:
   m_ObjectHideFlags: 0
@@ -68029,7 +68032,10 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+<<<<<<< HEAD
   - component: {fileID: 519420033}
+=======
+>>>>>>> AlejandroRivera
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -68149,6 +68155,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -7.76, y: 1.5097928, z: -10}
   m_LocalScale: {x: 0.5663837, y: 0.5663837, z: 0.5663837}
   m_ConstrainProportionsScale: 0
@@ -68169,6 +68176,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   John: {fileID: 1091988110}
   tiempo: 2
+=======
+  m_LocalPosition: {x: 3.33, y: 0.87, z: -10}
+  m_LocalScale: {x: 0.5663837, y: 0.5663837, z: 0.5663837}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1757474953}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> AlejandroRivera
 --- !u!1 &520655708
 GameObject:
   m_ObjectHideFlags: 0
@@ -74772,6 +74787,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!1 &1091988109
 GameObject:
   m_ObjectHideFlags: 0
@@ -74803,6 +74819,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1757474953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> AlejandroRivera
 --- !u!1001 &1093361728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81311,7 +81329,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+<<<<<<< HEAD
   - {fileID: 1091988110}
+=======
+  - {fileID: 519420032}
+>>>>>>> AlejandroRivera
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1757474954
@@ -84803,5 +84825,8 @@ SceneRoots:
   - {fileID: 1107529207}
   - {fileID: 1745493676}
   - {fileID: 439059031}
+<<<<<<< HEAD
   - {fileID: 519420032}
   - {fileID: 347174384}
+=======
+>>>>>>> AlejandroRivera
