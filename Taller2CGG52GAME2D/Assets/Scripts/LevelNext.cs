@@ -10,7 +10,7 @@ public class LevelNext : MonoBehaviour
     {
         if (Collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
     // Start is called before the first frame update
