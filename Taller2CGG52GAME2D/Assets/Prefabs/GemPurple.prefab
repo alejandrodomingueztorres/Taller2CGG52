@@ -140,6 +140,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7874464710454650248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a12e5215f58dde044b301baae614de56, type: 3}
+  m_Script: {fileID: 11500000, guid: ea86cbbd24138634e9c4a211697de4d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gemaPrefab: {fileID: 0}
+  cantidadGemas: 5
+  puntosDeSpawn: []
