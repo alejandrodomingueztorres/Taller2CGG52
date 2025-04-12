@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.4037189, y: 0.109, z: 0}
-  m_LocalScale: {x: 0.08, y: 0.08, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -141,8 +141,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.012650609, y: -0.0057502687}
-  m_Size: {x: 0.10819292, y: 0.15649521}
+  m_Offset: {x: 0.018932998, y: -0.00470905}
+  m_Size: {x: 0.1213817, y: 0.18107814}
   m_Direction: 0
 --- !u!50 &1841109127762668798
 Rigidbody2D:
@@ -183,5 +183,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e661a624c993f4cb7efbaeb49854ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  John: {fileID: 6887877867202195678, guid: 012d3d7f87e32c44ebecbdf8cf8759e4, type: 3}
-  BulletPrefab: {fileID: 9141338218809068285, guid: aad351fe0a20f1d408820b4765b73e6e, type: 3}
+  player: {fileID: 5864445204784410657, guid: 2f21d1d169125eb45821e2b26854327a, type: 3}
+  Bullet1: {fileID: 8267286919356872130, guid: 286a61960d7ae034384c02b4d13c1eb1, type: 3}
