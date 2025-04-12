@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    public Transform John;
+    public Transform player;
 
     void Update()
     {
-        if (John != null)
+        if (player != null)
         {
             Vector3 position = transform.position;
-            position.x = John.position.x;
+            position.x = player.position.x;
             transform.position = position;
         }
     }
