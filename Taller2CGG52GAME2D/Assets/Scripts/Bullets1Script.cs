@@ -32,9 +32,14 @@ public class Bullets1Script : MonoBehaviour
     {
         MovePlayer player = collision.GetComponent<MovePlayer>();
         BearScript Bear = collision.GetComponent<BearScript>();
+        GruntScript grunt = collision.GetComponent<GruntScript>();
         if (player != null)
         {
             player.Hit();
+        }
+        if (grunt != null)
+        {
+            grunt.Hit();
         }
         if (Bear != null)
         {
