@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MovePlayer : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class MovePlayer : MonoBehaviour
     private float LastShoot;
     private int Health = 5;
     public Text textoVida;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,7 @@ public class MovePlayer : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
         tVida();
+        anim = GetComponent<Animator>();
 
 
         if (rb == null)
@@ -95,16 +98,27 @@ public class MovePlayer : MonoBehaviour
     public void Hit()
     {
         Health = Health - 1;
-        if (Health == 0) Destroy(gameObject);
+        if (Health <= 0)
+        {
+            Destroy(gameObject);
+            anim.SetTrigger("Death");
+            StartCoroutine(muerte());
+        }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("muerteIns"))
         {
             Health = Health - 100;
             tVida();
         }
+    }
+
+    IEnumerator muerte()
+    {
+        yield return new WaitForSeconds(5.0f);
+        SceneManager.LoadScene("Scene1");
     }
     void tVida()
     {
