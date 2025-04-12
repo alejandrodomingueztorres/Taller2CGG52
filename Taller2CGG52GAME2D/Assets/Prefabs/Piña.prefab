@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 239821191916365273}
   - component: {fileID: 141594766833501126}
   - component: {fileID: 1188375727891475798}
-  - component: {fileID: 1817721936557149418}
+  - component: {fileID: 3083542328085121851}
   m_Layer: 0
   m_Name: "Pi\xF1a"
   m_TagString: Untagged
@@ -153,7 +153,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
---- !u!114 &1817721936557149418
+--- !u!114 &3083542328085121851
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,9 +162,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1865970589946130175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d9b4ed8bb24a4f438b53f79a0ce3ae5, type: 3}
+  m_Script: {fileID: 11500000, guid: 1cd5f044858cfeb47af39e393b229fdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "pi\xF1aPrefab": {fileID: 1865970589946130175}
-  "cantidadPi\xF1as": 20
-  puntosDeSpawn: []

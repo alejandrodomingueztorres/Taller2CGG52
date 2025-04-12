@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
     public static GameManager instance;
 
-    private int score;
+    private int score = 0;
 
-    private void Awake()
+    public int Score { get => score; set => score = value; }
+
+    private void Awake() //Awake se llama antes de Start
     {
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject); //Persistencia de la instancia del GameManager
         }
         else
         {
@@ -20,9 +24,26 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SumValues(int value)
+    // Start is called before the first frame update
+    void Start()
     {
-        score += value;
-        Debug.Log("Score: " + score);
+
     }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public void SumValues(int count)
+    {
+        score += count;
+    }
+
+    public void ResetValue()
+    {
+        score = 0;
+    }
+
 }
