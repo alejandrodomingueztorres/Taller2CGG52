@@ -16,8 +16,13 @@ public class AppleRecolected : MonoBehaviour
 
     }
 
+    //private void OnCollisionExit(Collision collision)
+    //{
+        
+    //}
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Apple Recolected "+ collision.tag);
         if (collision.CompareTag("Player"))
         {
             GameManager.Instance.SumValues(1); 
