@@ -20,7 +20,7 @@ public class MelonRecolected : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            GameManager.instance.SumValues(1);
+            GameManager.Instance.SumValues(1);
             Destroy(gameObject);
         }
     }

@@ -9,12 +9,12 @@ public class GameControllerScene1 : MonoBehaviour
 {
     [SerializeField]
     private TextMeshProUGUI txtGemaScore;
-    public GameObject PanelReinicio;
+    //public GameObject PanelReinicio;
 
     // Start is called before the first frame update
     void Start()
     {
-        PanelReinicio.SetActive(false);
+        //PanelReinicio.SetActive(false);
     }
 
     // Update is called once per frame
@@ -24,10 +24,17 @@ public class GameControllerScene1 : MonoBehaviour
     }
     public void ShowScore()
     {
-        //txtGemaScore.text = GameManager.Instance.Score.ToString();
+        txtGemaScore.text = GameManager.Instance.Score.ToString();
     }
-    public void ReiniciarNivel()
+    //public void ReiniciarNivel()
+    //{
+    //    SceneManager.LoadScene("Scene1");
+    //}
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene("Scene1");
+        if (collision.gameObject.tag == "muerteIns")
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }

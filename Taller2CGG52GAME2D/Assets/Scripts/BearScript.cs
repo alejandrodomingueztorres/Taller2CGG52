@@ -19,11 +19,11 @@ public class BearScript : MonoBehaviour
 
         Vector3 direction = player.transform.position - transform.position;
         if (direction.x >= 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
-        else transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        else transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f); 
 
         float distance = Mathf.Abs(player.transform.position.x - transform.position.x);
 
-        if (distance < 1.0f && Time.time > LastAtack + 0.25f)
+        if (distance < 0.5f && Time.time > LastAtack + 0.25f)
         {
             Atack();
             LastAtack = Time.time;

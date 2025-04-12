@@ -20,6 +20,6 @@ public class GameControllerScene2 : MonoBehaviour
     }
     public void ShowScore()
     {
-        //txtScore.text = GameManager.Instance.Score.ToString();
+        txtScore.text = GameManager.Instance.Score.ToString();
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    public static GameManager instance;
+    public static GameManager Instance;
 
     private int score = 0;
 
@@ -13,9 +13,9 @@ public class GameManager : MonoBehaviour
 
     private void Awake() //Awake se llama antes de Start
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject); //Persistencia de la instancia del GameManager
         }
         else

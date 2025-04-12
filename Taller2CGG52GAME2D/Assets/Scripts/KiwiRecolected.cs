@@ -20,7 +20,7 @@ public class KiwiRecolected : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            GameManager.instance.SumValues(2);
+            GameManager.Instance.SumValues(2);
             Destroy(gameObject);
         }
     }
