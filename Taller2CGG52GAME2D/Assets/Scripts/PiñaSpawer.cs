@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
-public class GemaSpawer : MonoBehaviour
+public class PiñaSpawer : MonoBehaviour
 {
-
-    [SerializeField] private GameObject gemaPrefab; 
-    [SerializeField] private int cantidadGemas = 5; 
-    [SerializeField] private List<GameObject>  puntosDeSpawn;
+    [SerializeField] private GameObject piñaPrefab;
+    [SerializeField] private int cantidadPiñas = 20;
+    [SerializeField] private List<GameObject> puntosDeSpawn;
 
     //float x = 12f;
     //float y = 45f;
@@ -20,7 +18,7 @@ public class GemaSpawer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GenerarGemas();
+        GenerarPiñas();
 
     }
 
@@ -30,7 +28,7 @@ public class GemaSpawer : MonoBehaviour
 
     }
 
-    private void GenerarGemas()
+    private void GenerarPiñas()
     {
         if (puntosDeSpawn.Count == 0)
         {
@@ -39,23 +37,23 @@ public class GemaSpawer : MonoBehaviour
         }
 
         // Si hay menos puntos que la cantidad de gemas, ajustamos
-        int gemasAGenerar = Mathf.Min(cantidadGemas, puntosDeSpawn.Count);
+        int piñasAGenerar = Mathf.Min(cantidadPiñas, puntosDeSpawn.Count);
 
         List<GameObject> puntosDisponibles = new List<GameObject>(puntosDeSpawn);
 
-        for (int i = 0; i < gemasAGenerar; i++)
+        for (int i = 0; i < piñasAGenerar; i++)
         {
             if (puntosDisponibles.Count == 0) break;
 
             int indiceAleatorio = Random.Range(0, puntosDisponibles.Count);
             GameObject puntoSeleccionado = puntosDisponibles[indiceAleatorio];
 
-            Instantiate(gemaPrefab, puntoSeleccionado.transform.position, puntoSeleccionado.transform.rotation);
+            Instantiate(piñaPrefab, puntoSeleccionado.transform.position, puntoSeleccionado.transform.rotation);
 
-            puntosDisponibles.RemoveAt(indiceAleatorio); 
+            puntosDisponibles.RemoveAt(indiceAleatorio);
         }
-    
-}
 
-    
+    }
+
+
 }
