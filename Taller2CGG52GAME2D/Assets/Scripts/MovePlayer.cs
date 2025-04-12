@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MovePlayer : MonoBehaviour
 {
@@ -13,12 +14,14 @@ public class MovePlayer : MonoBehaviour
     private Animator Animator;
     private float LastShoot;
     private int Health = 5;
+    public Text textoVida;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
+        tVida();
 
 
         if (rb == null)
@@ -93,6 +96,19 @@ public class MovePlayer : MonoBehaviour
     {
         Health = Health - 1;
         if (Health == 0) Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("muerteIns"))
+        {
+            Health = Health - 100;
+            tVida();
+        }
+    }
+    void tVida()
+    {
+        textoVida.text = Health.ToString();
     }
 }
 
