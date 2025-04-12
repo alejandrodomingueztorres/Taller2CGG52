@@ -5,7 +5,7 @@ using UnityEngine;
 public class MelonSpawer : MonoBehaviour
 {
     [SerializeField] private GameObject melonPrefab;
-    [SerializeField] private int cantidadMelones = 20;
+    [SerializeField] private int cantidadMelones = 30;
     [SerializeField] private List<GameObject> puntosDeSpawn;
 
     //float x = 12f;
