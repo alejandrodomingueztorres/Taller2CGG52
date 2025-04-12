@@ -10,6 +10,7 @@ public class GameControllerScene1 : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI txtGemaScore;
     public GameObject PanelReinicio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,6 @@ public class GameControllerScene1 : MonoBehaviour
     }
     public void ReiniciarNivel()
     {
-        SceneManager.LoadScene("Scene1")
+        SceneManager.LoadScene("Scene1");
     }
 }
